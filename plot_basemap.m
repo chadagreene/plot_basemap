@@ -47,7 +47,7 @@ end
 %% 
 
 % Define the map projection: 
-proj = projcrs(3413,'authority','epsg'); 
+proj = projcrs(code,'authority',authority); 
 
 % Get current map extents: 
 xl = xlim; 
