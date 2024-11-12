@@ -38,6 +38,8 @@ function [h,Im,x,y,attrib] = plot_basemap(authority,code,basemap)
 %% Error checks
 
 narginchk(2,3) 
+assert(ismember(lower(authority),{'epsg','esri'}),"Error: Authority must be either 'epsg' or 'esri.")
+assert(isscalar(code),"Projection code must be a scalar.")
 assert(~isequal(axis,[0 1 0 1]),'A map must be initiated before calling plot_basemap.')
 
 if nargin==2
