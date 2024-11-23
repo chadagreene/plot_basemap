@@ -5,7 +5,7 @@ function [h,Im,x,y,attrib] = plot_basemap(authority,code,basemap)
 %% Syntax
 % 
 %  plot_basemap(authority,code)
-%  plot_basemap(authority,code,'basemap',basemap) 
+%  plot_basemap(authority,code,basemap) 
 %  [h,Im,x,y,attrib] = plot_basemap(...) 
 % 
 %% Description 
@@ -97,10 +97,4 @@ if nargout==0
 end
 
 end
-
-
-
-
-
-
 
